@@ -17,11 +17,12 @@ class Square extends Thread
  public void run()
 
  {
+    if(x%2==0)
+    {
+      int sqr = x * x;
 
- int sqr = x * x;
-
- System.out.println("Square of " + x + " = " + sqr );
-
+      System.out.println("Square of " + x + " = " + sqr );
+    }
  }
 
 }
@@ -41,11 +42,12 @@ class Cube extends Thread
  public void run()
 
  {
+  if(x%2 !=0)
+  {
+    int cub = x * x * x;
 
- int cub = x * x * x;
-
- System.out.println("Cube of " + x + " = " + cub );
-
+   System.out.println("Cube of " + x + " = " + cub );
+  }
  }
 
 }
